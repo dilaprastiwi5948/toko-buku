@@ -61,7 +61,7 @@ class CategoryController extends Controller
         //menambahkan kategori di db
         \Validator::make($request->all(), [
             "name" => "required|min:3|max:20",
-            "image" => "required"
+            "image" => "nullable"
         ])->validate();
 
         $name = $request->get('name');
@@ -130,7 +130,7 @@ class CategoryController extends Controller
 
         \Validator::make($request->all(), [
             "name" => "required|min:3|max:20",
-            "image" => "required",
+            "image" => "nullable",
             "slug" => [
             "required",
             Rule::unique("categories")->ignore($category->slug, "slug")

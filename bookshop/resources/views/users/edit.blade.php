@@ -158,13 +158,14 @@
 
     <label for="email">Email</label>
     <input
+        type="text"
+        name="email"
+        id="email"
         value="{{$user->email}}" disabled
         class="form-control
         {{$errors->first('email') ? "is-invalid" : ""}} "
         placeholder="user@mail.com"
-        type="text"
-        name="email"
-        id="email"/>
+        />
 
         <div
             class="invalid-feedback">

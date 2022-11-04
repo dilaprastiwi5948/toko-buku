@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Larashop @yield('title')</title>
+    <title>Bookshop @yield('title')</title>
     <link rel="stylesheet" href="{{asset('polished/polished.min.css')}}">
     <link rel="stylesheet" href="{{asset('polished/iconic/css/open-iconic-bootstrap.min.css')}}">
     <style>
         .grid-highlight {
         padding-top: 1rem;
         padding-bottom: 1rem;
-        background-color: #5c6ac4;
-        border: 1px solid #202e78;
+        background-color: #8d7343;
+        border: 1px solid #7e5b1a;
         color: #fff;
         }
 
@@ -37,7 +37,7 @@
         class="navbar navbar-expand p-0">
         <a
             class="navbar-brand text-center col-xs-12 col-md-3 col-lg-2 mr-0"
-            href="{{route('home')}}"> Larashop
+            href="{{route('home')}}"> Bookshop
         </a>
 
         <button

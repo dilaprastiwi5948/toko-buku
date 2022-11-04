@@ -70,7 +70,7 @@ class BookController extends Controller
             "publisher" => "required|min:3|max:200",
             "price" => "required|digits_between:0,10",
             "stock" => "required|digits_between:0,10",
-            "cover" => "required"
+            "cover" => "nullable"
             ])->validate();
 
         //menambahkan books
